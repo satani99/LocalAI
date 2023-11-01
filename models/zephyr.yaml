@@ -1,0 +1,18 @@
+backend: llama
+context_length: 2000
+threads: 12
+f16: true
+gpu_layers: 80
+name: zephyr
+parameters:
+  model: zephyr
+  temperature: 0.2
+  top_k: 40
+  top_p: 0.65
+roles:
+  assistant: 'ASSISTANT:'
+  system: 'SYSTEM:'
+  user: 'USER:'
+template:
+  chat: zephyr
+  completion: zephyr
